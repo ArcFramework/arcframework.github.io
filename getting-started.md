@@ -18,7 +18,7 @@ Make sure to place the $HOME/.composer/vendor/bin directory (or the equivalent d
 arc executable can be located by your system.
 
 Once installed, the `arc new` command will create a fresh Arc installation in the directory you specify. For instance, `arc 
-new my-plugin` will create a directory named `my-plugin` containing a fresh Laravel installation with all of Arc's 
+new my-plugin` will create a directory named `my-plugin` containing a fresh Arc installation with all of Arc's 
 dependencies already installed:
 
     arc new my-plugin
