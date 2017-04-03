@@ -28,3 +28,16 @@ dependencies already installed:
 To install via git you should clone the `ArcFramework/plugin` repository. This installs the plugin boilerplate with it's
 dependencies including the Arc framework.
 
+## Where do I put my code?
+
+Good question. There are a few different approaches you could try.
+
+### Plugin::run() method
+
+Add a `run()` method to your `Plugin` class which is created in the root `app/` directory when you install the plugin
+boilerplate. This method will be automatically called when the plugin is booted, if it exists, and any typehinted parameters
+will be automatically injected via the service container.
+
+### Service Providers
+
+You could create service providers which you could use to bind your dependencies and bootstrap components of your plugin.
