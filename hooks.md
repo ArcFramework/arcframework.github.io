@@ -11,8 +11,7 @@ are free to use that directly instead.
 To define what should be done when your plugin is activated, you can use the `Arc\Hooks\Activation` object
 like this:
 
-```php7
-<?php
+```php
 
 namespace Vendor\Plugin;
 
