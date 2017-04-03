@@ -1,3 +1,8 @@
+---
+layout: post
+title: Getting Started wtih Arc
+---
+
 # Getting Started
 
 The following are instructions for getting started with creating a plugin using Arc.
