@@ -1,3 +1,8 @@
+---
+title: Arc Framework Documentation
+layout: post
+---
+
 #Arc Wordpress Plugin Framework
 
 ## Contents
