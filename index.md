@@ -6,7 +6,7 @@
 1. [Key Features](#key-features)
 1. [Getting Started](getting-started)
 1. Wordpress API Wrapper
-  1. [Hooks](hooks)
+    1. [Hooks](hooks)
 1. [Controllers](controllers)
 
 
