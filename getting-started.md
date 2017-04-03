@@ -11,8 +11,8 @@ The following are instructions for getting started with creating a plugin using 
 
 You can install the plugin in two ways:
 
-1) (Via the installer)[#installer]
-2) (Via git) [#installation via git]
+1. (Via the installer)[#installer]
+2. (Via git)[#installation via git]
 
 ### Installer
 
