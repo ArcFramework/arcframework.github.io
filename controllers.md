@@ -6,7 +6,7 @@ Controllers should extend the `Arc\Http\Controllers\BaseController` class. This 
 methods:
 
 1. [abort()](#abort)
-1. [makeValidator](#make-validator)
+1. [makeValidator()](#make-validator)
 1. [redirect()](#redirect)
 1. [response()](#response)
 
