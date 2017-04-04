@@ -27,7 +27,7 @@ You may also provide the exception's response text:
 ## `makeValidator($requestParameters, $rules)`
 
 Pass in an array of request parameters and an array of rules to generate an instance of Laravel's
-`Illuminate\Validation\Validator` class. Calling this method is analogous to calling `make()` on Laravel's `Validator` facade.
+`Illuminate\Validation\Validator` class. Calling this method is analogous to [calling `make()` on Laravel's `Validator` facade](https://laravel.com/docs/master/validation#manually-creating-validators).
 
 ## `redirect()`
 
