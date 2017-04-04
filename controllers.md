@@ -1,3 +1,5 @@
+[Home](index.md) / Controllers
+
 # Controllers
 
 ## Helper Methods
