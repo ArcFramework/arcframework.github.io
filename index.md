@@ -35,21 +35,24 @@ No more relentless tangle of `include` and `require` calls!
 
 #### Illuminate IoC Container
 
-Laravel's [Illuminate IoC container](https://laravel.com/master/5.4/container) is perhaps the most fundamental component of Laravel, and of Arc. In the words of the
+Laravel's [Illuminate IoC container](https://laravel.com/master/5.4/container) is perhaps the most fundamental component of
+Laravel, and of Arc. In the words of the
 Laravel documentation:
 
 > The Laravel service container is a powerful tool for managing class dependencies and performing dependency injection.
 
 #### Illuminate Routing and HTTP Layer
 
-Arc includes Laravel's [Illuminate Routing and HTTP](https://laravel.com/docs/master/routing) components to make an MVC application flow a breeze with your Arc plugin.
+Arc includes Laravel's [Illuminate Routing and HTTP](https://laravel.com/docs/master/routing) components to make an
+MVC application flow a breeze with your Arc plugin.
 
 #### Testability out of the box
 
 Arc aims to be fully configured for unit testing with PHPUnit out of the box. Wordpress Doesn't make this very easy, so we've
-included Laravel's browser kit testing helpers as well as some extra more Wordpress specific testing helpers to make this
-as painless as possible.
+included a test case out of the box. The Arc test case has a list of helper methods and assertions which cover most of
+Laravel's own TestCase API as well as some extra Wordpress specific testing helpers to make this as painless as possible.
 
 #### Eloquent ORM
 
-Arc include's Laravel's [Eloquent ORM](https://laravel.com/docs/master/eloquent) which makes any database operations very easy.
+Arc include's Laravel's [Eloquent ORM](https://laravel.com/docs/master/eloquent) which makes any database operations
+very easy.
