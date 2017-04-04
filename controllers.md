@@ -8,6 +8,7 @@ Global helper functions can be problematic in the WordPress plugin context, so w
 helper functions which you might be used to using in Laravel controllers as methods on the parent Controller class.
 
 1. [abort()](#abort)
+1. [redirect()](#redirect)
 1. [response()](#response)
 
 ### `abort()`
@@ -22,6 +23,22 @@ You may also provide the exception's response text:
     
 ```php
 $this->abort(401, 'Unauthorized.');
+```
+
+### `redirect()`
+
+The redirect method returns a redirect HTTP response, or returns the redirector instance if called with no arguments:
+
+```php
+return $this->redirect('/home');
+
+return $this->redirect()->route('route.name');
+```
+
+```php
+return $this->response('Hello World', 200, $headers);
+
+return $this->response()->json(['foo' => 'bar'], 200, $headers);
 ```
 
 ### `response()`
