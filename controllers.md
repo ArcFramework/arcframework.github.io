@@ -22,7 +22,7 @@ $this->abort(401);
 You may also provide the exception's response text:
     
 ```php
-$this->abort(401, 'Unauthorized.');
+    $this->abort(401, 'Unauthorized.');
 ```
 
 ### `redirect()`
