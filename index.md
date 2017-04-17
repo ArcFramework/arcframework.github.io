@@ -6,6 +6,7 @@
 1. [Key Features](#key-features)
 1. [Getting Started](getting-started)
 1. [Controllers](controllers)
+1. [Models](models)
 1. [Arc CLI](arc-cli)
 1. Wordpress API Wrapper
     1. [Hooks](hooks)
