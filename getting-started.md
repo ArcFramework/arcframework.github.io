@@ -17,12 +17,14 @@ composer global require "arc-framework/installer"
 Make sure to place the $HOME/.composer/vendor/bin directory (or the equivalent directory for your OS) in your $PATH so the 
 arc executable can be located by your system.
 
-Once installed, the `arc new` command will create a fresh Arc installation in the directory you specify. For instance, `arc 
-new my-plugin` will create a directory named `my-plugin` containing a fresh Arc installation with all of Arc's 
-dependencies already installed:
+Use the `arc new` command to generate the boilerplate and install neccessary dependencies for a new plugin built with Arc.
 
-    arc new my-plugin
-    
+    arc new
+
+The command prompt will guide you through the process, asking for the required informatio (plugin name, slug, namespace etc.)
+to avoid the need for any string replacement in the plugin boilerplate. Some sensible defaults will be suggested based on
+your chosen plugin name to allow you to get started with minimal effort.
+
 ### Installation via Git
 
 To install via git you should clone the `ArcFramework/plugin` repository. This installs the plugin boilerplate with it's
@@ -30,12 +32,12 @@ dependencies including the Arc framework.
 
 ## Where do I put my code?
 
-Good question. There are a few different approaches you could try.
+Good question. There are a few different approaches you could try:
 
 ### Plugin::run() method
 
 Add a `run()` method to your `Plugin` class which is created in the root `app/` directory when you install the plugin
-boilerplate. This method will be automatically called when the plugin is booted, if it exists, and any typehinted parameters
+boilerplate. If it exists, this method will be automatically called when the plugin is booted, and any typehinted parameters
 will be automatically injected via the service container.
 
 ### Service Providers
