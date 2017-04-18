@@ -8,7 +8,7 @@ In addition to this Arc includes some default Eloquent models out of the box whi
 
 ## User
 
-### `findByEmail($email)`
+### `findByEmail($email)` (static)
 
 This static method returns the User matching the given email address or null if none exists.
 
@@ -16,7 +16,7 @@ This static method returns the User matching the given email address or null if 
 $user = User::findByEmail('user@domain.com');
 ```
 
-### `findByUsername($username)`
+### `findByUsername($username)` (static)
 
 This static method returns the User matching the given username (user_login) address or null if none exists.
 
@@ -24,3 +24,18 @@ This static method returns the User matching the given username (user_login) add
 $user = User::findByUsername('monkeypants_02');
 ```
 
+### `makeAdministrator()`
+
+Sets the user's role to 'administrator'.
+
+```php
+$user->makeAdministrator();
+```
+
+### `setRole($role)`
+
+Sets the user's role to the given role.
+
+```php
+$user->setRole('administrator');
+```
