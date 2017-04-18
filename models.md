@@ -10,9 +10,17 @@ In addition to this Arc includes some default Eloquent models out of the box whi
 
 ### `findByEmail($email)`
 
-Returns the User matching the given email address or null if none exists.
+This static method returns the User matching the given email address or null if none exists.
 
 ```php
 $user = User::findByEmail('user@domain.com');
+```
+
+### `findByUsername($username)`
+
+This static method returns the User matching the given username (user_login) address or null if none exists.
+
+```php
+$user = User::findByUsername('monkeypants_02');
 ```
 
