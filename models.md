@@ -39,3 +39,19 @@ Sets the user's role to the given role.
 ```php
 $user->setRole('administrator');
 ```
+
+### `setMeta($key, $value)`
+
+Sets the given usermeta key to the given value if a key value pair is provided or sets the key value pairs in the array if
+an array is provided as the first argument. The usermeta database record will be created if it does not already exist.
+
+```php
+// We can pass in a key and a value as the first and second parameters
+$user->setMeta('billing_country', 'Australia');
+```
+```php
+// Alternatively we could pass in an associative array to set multiple key value pairs at once
+$user->setMeta([
+    'billing_country' => 'Australia',
+    'billing_city' => 'Sydney'
+]);
