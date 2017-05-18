@@ -55,3 +55,15 @@ $user->setMeta([
     'billing_country' => 'Australia',
     'billing_city' => 'Sydney'
 ]);
+
+### `findMeta($key, $single = true)`
+
+Returns the usermeta value matching the given key. To return multiple values if they are avaiable pass false as the
+second paramater, otherwise only the first will be returned
+
+Sets the given usermeta key to the given value if a key value pair is provided or sets the key value pairs in the array if
+an array is provided as the first argument. The usermeta database record will be created if it does not already exist.
+
+```php
+$user->findMeta('first_name');
+```
