@@ -1,9 +1,14 @@
 ---
-post_title: 'Arc Wordpress Plugin Framework - Documentation Home'
+ID: 5
+post_title: 'Arc WordPress Plugin Framework &#8211; Documentation Home'
+author: webspanner
+post_date: 2017-05-27 02:54:21
+post_excerpt: ""
 layout: post
+permalink: >
+  http://arc-framework.com/2017/05/27/arc-wordpress-plugin-framework-documentation-home/
 published: true
 ---
-
 # Arc Wordpress Plugin Framework
 
 ## Contents
