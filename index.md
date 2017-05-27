@@ -1,3 +1,9 @@
+---
+post_title: 'Arc Wordpress Plugin Framework - Documentation Home'
+layout: post
+published: true
+---
+
 # Arc Wordpress Plugin Framework
 
 ## Contents
