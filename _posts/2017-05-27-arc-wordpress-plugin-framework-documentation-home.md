@@ -9,27 +9,25 @@ permalink: >
   http://arc-framework.com/2017/05/27/arc-wordpress-plugin-framework-documentation-home/
 published: true
 ---
-<h1>Arc Wordpress Plugin Framework</h1>
+# Arc Wordpress Plugin Framework
 
-<h2>Contents</h2>
+## Contents
 
-<ol>
-<li><a href="#about-arc">About Arc</a></li>
-<li><a href="#key-features">Key Features</a></li>
-<li><a href="getting-started">Getting Started</a></li>
-<li><a href="controllers">Controllers</a></li>
-<li><a href="models">Models</a></li>
-<li><a href="arc-cli">Arc CLI</a></li>
-<li>Wordpress API Wrapper</li>
-<li><a href="hooks">Hooks</a></li>
-</ol>
+1. [About Arc](#about-arc)
+1. [Key Features](#key-features)
+1. [Getting Started](getting-started)
+1. [Controllers](controllers)
+1. [Models](models)
+1. [Arc CLI](arc-cli)
+1. Wordpress API Wrapper
+1. [Hooks](hooks)
 
-<h3>About Arc</h3>
+### About Arc
 
 Arc was designed to make the development workflow for wordpress plugins as robust and easy as possible for the modern PHP
 developer. Arc is built on the shoulders of the popular (Laravel Framework)[laravel.com] for PHP which for many has made leaps
 bounds for the developer-friendliness of developing web applications with PHP. Special mention should also go to the
-<a href="symfony.com">Symfony Framework</a> some components of which have been used by Laravel and therefore Arc. This project makes no
+[Symfony Framework](symfony.com) some components of which have been used by Laravel and therefore Arc. This project makes no
 apologies for it's inspiration by and emulation of Laravel.
 
 Arc may not be the best solution for every plugin. For example, many plugins could be implemented with a few lines of
@@ -38,37 +36,45 @@ server environments or with minimal risk of dependency collisions. If this is yo
 development processes might be more efficient, and there's nothing wrong with that approach. Where Arc can shine is for more
 complex custom plugin development which relies on depencies pulled in from Composer, and for which testability is essential.
 
-<h3>Key Features</h3>
+### Key Features
 
 Here are some of the key features of Arc:
 
-<h4>Composer</h4>
+#### Composer
 
-Like most modern PHP applications Arc uses <a href="https://getcomposer.org/">composer</a> for it's dependency managment and autoloading.
-No more relentless tangle of <code>include</code> and <code>require</code> calls!
+Like most modern PHP applications Arc uses [composer](https://getcomposer.org/) for it's dependency managment and autoloading.
+No more relentless tangle of `include` and `require` calls!
 
-<h4>Illuminate IoC Container</h4>
+#### Illuminate IoC Container
 
-Laravel's <a href="https://laravel.com/master/5.4/container">Illuminate IoC container</a> is perhaps the most fundamental component of
+Laravel's [Illuminate IoC container](https://laravel.com/master/5.4/container) is perhaps the most fundamental component of
 Laravel, and of Arc. In the words of the
 Laravel documentation:
 
-<blockquote>
-  The Laravel service container is a powerful tool for managing class dependencies and performing dependency injection.
-</blockquote>
+&gt; The Laravel service container is a powerful tool for managing class dependencies and performing dependency injection.
 
-<h4>Illuminate Routing and HTTP Layer</h4>
+#### Illuminate Routing and HTTP Layer
 
-Arc includes Laravel's <a href="https://laravel.com/docs/master/routing">Illuminate Routing and HTTP</a> components to make an
+Arc includes Laravel's [Illuminate Routing and HTTP](https://laravel.com/docs/master/routing) components to make an
 MVC application flow a breeze with your Arc plugin.
 
-<h4>Testability out of the box</h4>
+#### Testability out of the box
 
 Arc aims to be fully configured for unit testing with PHPUnit out of the box. Wordpress Doesn't make this very easy, so we've
 included a test case out of the box. The Arc test case has a list of helper methods and assertions which cover most of
 Laravel's own TestCase API as well as some extra Wordpress specific testing helpers to make this as painless as possible.
 
-<h4>Eloquent ORM</h4>
+#### Eloquent ORM
 
-Arc include's Laravel's <a href="https://laravel.com/docs/master/eloquent">Eloquent ORM</a> which makes any database operations
+Arc include's Laravel's [Eloquent ORM](https://laravel.com/docs/master/eloquent) which makes any database operations
 very easy.
+
+```
+
+function test_function($var)
+
+{
+
+$hello;
+
+}
