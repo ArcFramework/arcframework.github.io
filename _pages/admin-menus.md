@@ -12,6 +12,8 @@ published: true
 # Create an admin page under 'Settings' in the wp-admin sidebar
 
 ```
+&lt;?php
+
 // Instantiate the admin menus object
 $adminMenus = $this-&gt;app-&gt;make(\Arc\AdminMenus\AdminMenus::class);
 
