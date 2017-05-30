@@ -11,22 +11,33 @@ published: true
 ---
 # Create an admin page under 'Settings' in the wp-admin sidebar
 
+A good place to register admin menus would be in a service provider. Here are the minimum
+settings you need to pass in to register an admin menu for your plugin.
+
 ```
-&lt;?php
+//&lt;?php
 
-// Instantiate the admin menus object
-$adminMenus = $this-&gt;app-&gt;make(\Arc\AdminMenus\AdminMenus::class);
+namespace MyVendor\MyPlugin\Providers;
 
-// Create the settings page
-$adminMenus-&gt;createSettingsPage()
-    -&gt;called(&#039;My Plugin Settings&#039;)
-    -&gt;withMenuTitle(&#039;My Plugin&#039;)
-    -&gt;restrictedToCapability(&#039;administrator&#039;)
-    -&gt;withSlug(&#039;my-settings-page&#039;)
-    -&gt;whichRendersView(&#039;admin.settings&#039;)
-    -&gt;withSettings([
-        &#039;my_plugin_enable_plugin&#039;
+use Arc\Admin\AdminMenus;
+use Illuminate\Support\ServiceProvider;
 
-    ])
-    -&gt;add();
+class AdminMenusServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot(AdminMenus $adminMenus)
+    {
+        // Create the settings page
+        $adminMenus-&gt;createSettingsPage()
+            -&gt;whichRendersView(&#039;admin.settings&#039;)
+            -&gt;withSettings([
+                &#039;my_plugin_some_setting&#039;
+            ])-&gt;add();
+    }
+}
+
 ```
