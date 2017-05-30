@@ -32,7 +32,7 @@ class AdminMenusServiceProvider extends ServiceProvider
     public function boot(AdminMenus $adminMenus)
     {
         // Create the settings page
-        $adminMenus-&gt;createSettingsPage()
+        $adminMenus-&gt;addSettingsPage()
             -&gt;whichRendersView(&#039;admin.settings&#039;)
             -&gt;withSettings([
                 &#039;my_plugin_some_setting&#039;
