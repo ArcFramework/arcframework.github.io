@@ -69,14 +69,4 @@ Laravel's own TestCase API as well as some extra Wordpress specific testing help
 Arc include's Laravel's [Eloquent ORM](https://laravel.com/docs/master/eloquent) which makes any database operations
 very easy.
 
-```
-
-function test_function($var)
-
-{
-
-$hello;
-
-}
-
-```
+&nbsp;
