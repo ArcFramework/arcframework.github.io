@@ -1,3 +1,12 @@
 - ## Getting Started
     - [Installation](/docs/{{version}}/installation)
     - [Installing Plugin In Wordpress](/docs/{{version}}/installing-plugin-in-wordpress)
+    - [Where Do I Put My Code?](/docs/{{version}}/where-do-i-put-my-code)
+- ## MVC
+    - [Controllers](/docs/{{version}}/controllers)
+    - [Models](/docs/{{version}}/models)
+- ## Console
+    - [Arc CLI](/docs/{{version}}/arc-cli)
+- ## Wordpress Layer
+    - [Hooks](/docs/{{version}}/hooks)
+    
