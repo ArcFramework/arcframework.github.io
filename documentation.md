@@ -1,3 +1,3 @@
 - ## Getting Started
     - [Installation](/docs/{{version}}/installation)
-    - [Installing Plugin In Wordpress](/docs/{{version}}/installing-plugin-in-wordress)
+    - [Installing Plugin In Wordpress](/docs/{{version}}/installing-plugin-in-wordpress)
