@@ -59,10 +59,10 @@ settings you need to pass in to register an admin menu for your plugin.
         public function boot(AdminMenus $adminMenus)
         {
             // Create the settings page
-            $adminMenus-&gt;addSettingsPage()
-                -&gt;whichRendersView('admin.settings')
-                -&gt;withSettings([
+            $adminMenus->addSettingsPage()
+                ->whichRendersView('admin.settings')
+                ->withSettings([
                     'my_plugin_some_setting'
-                ])-&gt;add();
+                ])->add();
         }
     }
