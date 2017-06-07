@@ -68,16 +68,13 @@ files are saved in your home directory with the plugin name as a subdirectory fo
 `~/plugin-name/plugin-name-1.0.0.zip`. If you wish to customise where the Arc plugins are shipped to you can set a default
 with an `~/.arc/config.php` file.
 
-```
-<?php
+    /*
+     |---------------------------
+     | Arc Framework CLI Config
+     |---------------------------
+     */
 
-/*
- |---------------------------
- | Arc Framework CLI Config
- |---------------------------
- */
- 
-return [
-    'shippedPluginDirectory' => '/Users/Me/plugins`
-];
-```
+    return [
+        'shippedPluginDirectory' => '/Users/Me/plugins`
+    ];
+
