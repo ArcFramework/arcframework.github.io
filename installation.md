@@ -1,6 +1,6 @@
 # Installation
 
-You can install the plugin in two ways:
+You can install the framework in two ways:
 
 1. [Via the installer](#installer)
 2. [Via git](#installation-via-git)
