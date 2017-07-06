@@ -33,4 +33,16 @@ In the above example we are performing the task of dependency injection by using
 
 ## Shortcode Views 
 
-When you define a shortcode with the `rendersView()` fluent method, you can pass the name of a blade view into the method to define what html is output when the shortcode is used on the website.  
+When you define a shortcode with the `rendersView()` fluent method, you can pass the name of a blade view into the method to define what html is output when the shortcode is used on the website. For example, if you have a view located in a file called `/resources/views/task/create.blade.php` you could make the shortcode render that view like so:
+
+    $shortcodes->code('create-task')
+        ->renderView('task.create');
+
+If you would like to pass a variable for use in that view, you can do so in the second parameter of `renderView()`.
+
+    $shortcodes->code('create-task')
+        ->renderView('task.create', [
+            'projects' => $myProjects
+        ]);
+
+The above would make a variable valled `$projects` available in the view which would be set to the value of `$myProjects`.
