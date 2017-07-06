@@ -11,4 +11,4 @@
     - [Arc CLI](/docs/{{version}}/arc-cli)
 - ## Wordpress Layer
     - [Hooks](/docs/{{version}}/hooks)
-    
+    - [Shortcodes](/docs/{{version}}/shortcodes)
