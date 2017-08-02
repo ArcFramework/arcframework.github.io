@@ -8,3 +8,10 @@ Returns the base URL of the Wordpress instance which is running the Arc plugin. 
 
     // Returns "http://mywebsite.com"
     \MyCompany\MyPluginName\Plugin::plugin()->baseUrl();
+    
+## `resourcePath()`
+
+Returns the file path of the plugin's resources directory. For example:
+
+    // Returns "/var/www/localhost/wp-content/plugins/my-plugin-name/resources"
+    \MyCompany\MyPluginName\Plugin::plugin()->resourcePath();
