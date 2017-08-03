@@ -692,16 +692,15 @@ Likewise, you may use the `*` character when specifying your validation messages
 <a name="custom-validation-rules"></a>
 ## Custom Validation Rules
 
-Laravel provides a variety of helpful validation rules; however, you may wish to specify some of your own. One method of registering custom validation rules is using the `extend` method on the `Validator` [facade](/docs/{{version}}/facades). Let's use this method within a [service provider](/docs/{{version}}/providers) to register a custom validation rule:
+Arc provides a variety of helpful validation rules; however, you may wish to specify some of your own. One method of registering custom validation rules is using the `extend` method on the `Validator` class. Because Arc does not support facades like Laravel, we just need to grab the validator out of the service container. Let's use this method within a [service provider](/docs/{{version}}/providers) to register a custom validation rule:
 
     <?php
 
-    namespace App\Providers;
+    namespace MyVendor\MyPlugin\Providers;
 
     use Illuminate\Support\ServiceProvider;
-    use Illuminate\Support\Facades\Validator;
 
-    class AppServiceProvider extends ServiceProvider
+    class PluginServiceProvider extends ServiceProvider
     {
         /**
          * Bootstrap any application services.
@@ -710,7 +709,11 @@ Laravel provides a variety of helpful validation rules; however, you may wish to
          */
         public function boot()
         {
-            Validator::extend('foo', function ($attribute, $value, $parameters, $validator) {
+            // Grab the validator out of the service container
+            $validator = $this->app->make('validator');
+            
+            // Define our custom rule with the 'extend' method
+            $validator->extend('foo', function ($attribute, $value, $parameters, $validator) {
                 return $value == 'foo';
             });
         }
@@ -730,4 +733,4 @@ The custom validator Closure receives four arguments: the name of the `$attribut
 
 You may also pass a class and method to the `extend` method instead of a Closure:
 
-    Validator::extend('foo', 'FooValidator@validate');
+    $validator->extend('foo', 'FooValidator@validate');
