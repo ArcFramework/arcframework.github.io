@@ -16,3 +16,4 @@
 - ## Wordpress Layer
     - [Hooks](/docs/{{version}}/hooks)
     - [Shortcodes](/docs/{{version}}/shortcodes)
+    - [Custom Post Types](/docs/{{version}}/custom-post-types)
