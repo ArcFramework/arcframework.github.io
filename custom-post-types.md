@@ -50,7 +50,9 @@ If you would like to nest the admin page for your custom post type under another
 
     protected $showInMenu = 'my-plugin';
 
-### Customise headers of the admin columns
+### Customise appearance of the admin table
+
+#### Table headers
 
 To customise the headers of the columns of the table which is displayed on the admin page for your custom post type, define a method on your class called `adminColumnHeaders`. This method can accept an array containing the default column headers and should return an array of key value pairs representing the slug and name of the columns respectively.
 
@@ -63,6 +65,16 @@ To customise the headers of the columns of the table which is displayed on the a
         ];
     }
 
+#### Table cells
+
+To customise the cells of the table define a method called `adminColumnCells($column, $post)` which accepts the name of the column and the Custom Post Type model object for that row. This method must return the html which will be inside the table cell. You could return a view, with help from the `MyVendor\MyPlugin\Plugin::app()->view()` helper using the `$column` variable to select the appropriate view for the column.
+
+    public function adminColumnCells($column, $post)
+    {
+        return Plugin::app()->view("custom_post_types.my_custom_post.admin.columns.$column", [
+            'post' => $post
+        ]);
+    }
 
 ## Registering a custom post type
 
