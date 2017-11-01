@@ -46,3 +46,30 @@ If you would like to pass a variable for use in that view, you can do so in the 
         ]);
 
 The above would make a variable valled `$projects` available in the view which would be set to the value of `$myProjects`.
+
+## Shortcode Attributes
+
+When you define a shortcode which renders a view, that view will have available it three variables automatically as well as any additional parameters which you passed in via the second argument of `renderView()`.
+
+These are:
+
+### `$attributes`, `$content` and `$shortcodeName`
+
+For example, suppose we define a shortcode called `my-shortcode` which renders a view located in `/resources/views/shortcodes/my-shortcode.blade.php`. and pass in an attribute called `foo` like so:
+
+    $shortcodes->code('my-shortcode')->renderView('shortcodes.my-shortcode');
+
+And then on the page pass in an attribute called `foo` with a value of `"bar"`:
+
+    [my-shortcode foo="bar"] Some content here [/my-shortcode]
+    
+Then in the view template `/resources/views/shortcodes/my-shortcode.blade.php` we will have access to the following variables:
+
+    $shortcodeName = 'my-shortcode';
+    $content = ' Some content here ';
+    $attributes = ['foo' => 'bar'];
+
+
+
+    
+    $attributes[
