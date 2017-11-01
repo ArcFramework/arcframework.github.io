@@ -9,8 +9,9 @@ You can install the framework in two ways:
 
 First, download the Arc installer using Composer:
 
-composer global require "arc-framework/installer"
-Make sure to place the $HOME/.composer/vendor/bin directory (or the equivalent directory for your OS) in your $PATH so the 
+    composer global require "arc-framework/installer"
+    
+Make sure to place the `$HOME/.composer/vendor/bin directory` (or the equivalent directory for your OS) in your `$PATH` so the 
 arc executable can be located by your system.
 
 Use the `arc new` command to generate the boilerplate and install neccessary dependencies for a new plugin built with Arc.
