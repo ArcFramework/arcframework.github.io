@@ -49,9 +49,7 @@ The above would make a variable valled `$projects` available in the view which w
 
 ## Shortcode Attributes
 
-When you define a shortcode which renders a view, that view will have available it three variables automatically as well as any additional parameters which you passed in via the second argument of `renderView()`.
-
-These are:
+When you define a shortcode which renders a view, that view will have available it three variables automatically as well as any additional parameters which you passed in via the second argument of `renderView()`:
 
 ### `$attributes`, `$content` and `$shortcodeName`
 
@@ -68,8 +66,3 @@ Then in the view template `/resources/views/shortcodes/my-shortcode.blade.php` w
     $shortcodeName = 'my-shortcode';
     $content = ' Some content here ';
     $attributes = ['foo' => 'bar'];
-
-
-
-    
-    $attributes[
